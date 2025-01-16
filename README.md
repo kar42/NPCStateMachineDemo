@@ -38,90 +38,22 @@ The `State` class represents the smallest unit in the framework, aligning to a s
 For example, certain goals may require agents to carry out the Move task, which utilizes an A* implementation to determine a path to a goal defined object, and then uses velocity in conjunction with triggered animations to move the characters across the screen or interact with a given goal position. This goal can be interrupted or replaced, causing the agent to stop moving or adjust their behavior. Most tasks are either standalone within their owning goal or calculate states to change animations based on a variety of environmental factors, such as their own ray-cast driven perception system or external factors outside the agent’s control, like gravity or player triggered effects.
 
 ## Architecture Diagrams and Examples
-```
-Class Overview Key Features
-    
-    class GoalManager {
-        - activeGoal : Goal
-        - myGoals : LinkedList<Goal>
-        + ProcessGoals() : void
-        + GetBestAvailableGoal() : Goal
-    }
-    
-    class Goal {
-        - isGoalAvailable : bool
-        - goalTaskDictionary : Dictionary<TaskName, Task>
-        + ProcessTasks() : void
-        + IsGoalAvailable() : bool
-    }
-    
-    class Task {
-        - _states : List<State>
-        - _priorityScore : int
-        + PerformTask(goalPosition : Vector2) : void
-        + DetermineState() : State
-        + HandleStates(goalPosition : Vector2) : void
-    }
-    
-    class State {
-        - _stateName : StateName
-        - _animatorStateID : int
-        + IsAnimationInProgress() : bool
-        + TriggerState() : void
-        + EnableState() : void
-        + DisableState() : void
-    }
-    
-    %% Relationships
-    GoalManager --> "1..*" Goal : manages
-    Goal --> "1..*" Task : references
-    Task --> "1..*" State : owns
-```
 
-Sequence Diagram (Class Interactions at Runtime)
+![classDiagram](https://github.com/kar42/NPCStateMachineDemo/blob/main/DemoSamples/classDiagram.png "classDiagram")
+
 
 This **sequence diagram** shows the **method calls** between `GoalManager`, an available `Goal`, the `Task` with the highest priority, and that `Task`’s current `State`.
 
-```
-sequenceDiagram
-    participant GM as GoalManager
-    participant G as Goal
-    participant T as Task
-    participant S as State
-    
-    GM->>GM: ProcessGoals()
-    GM->>G: GetBestAvailableGoal() 
-    alt Goal is different from activeGoal
-        G-->>G: DisableGoalBehavior() (on old activeGoal)
-    end
-    
-    GM->>G: activeGoal.ProcessTasks()
-    G->>G: CalculateTaskPriorities()
-    G->>T: Select highest-priority Task
-    
-    T->>T: DetermineState() 
-    T->>S: Trigger/EnableState (animation)
-    T->>T: PerformTask(goalPosition)
-    
-    Note over GM,G,T,S: Each frame, the same pattern repeats
-```
+![classSequenceDiagram](https://github.com/kar42/NPCStateMachineDemo/blob/main/DemoSamples/classSequenceDiagram.png "classSequenceDiagram")
 
-Goal-Task-State Transition Example
+
+Task-State Transition Example
 
 Below is an example of how **a single `Goal`**, ChaseTarget, might transition between multiple `Task` objects. 
 Each task instance involved in carrying out patrol behavior may trigger a specific `State` corresponding to a particular animation and behavior.
 
-```
-ChaseTarget Goal
-    [*] --> Idle Task : Idle State - default
-    Idle Task --> Move Task : Move State - if movement triggered due to enemy detection
-    Move Task --> Attack Task : Attack State - if in range to attack
-    Attack Task --> Move Task : Move State - if target moves away but is still detected
-    Move Task --> Idle Task : Idle State - if no input or no target detected
-    Attack Task --> Idle Task : Idle State - if target is defeated
-    Idle Task --> Block Task : Defend State - if threat recognized
-    Block Task --> Idle Task : Idle State - if threat passes or block ability timer runs out
-```
+![taskStateTransition](https://github.com/kar42/NPCStateMachineDemo/blob/main/DemoSamples/taskStateTransition.png "taskStateTransition")
+
 
 ## Demo
 |                                                                                                                        |
