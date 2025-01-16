@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Ground
+  - speartip
+  - player
+  - Wall
+  - HealthPickup
+  - Liftable
+  - spear
+  - Enviornment
+  - smashable
+  - SpearRetrievable
+  - DynamicPlatform
+  - Ladder
+  - LadderTop
+  - LadderBottom
+  - LedgeGrabPoint
+  - WorldBoundary
+  - Shield
+  - InputManager
+  - Killable
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Ground
+  - Wall
+  - Enemies
+  - Obstacle
+  - Player
+  - Rope
+  - Grapple
+  - Projectiles
+  - Morrigan
+  - Smashable
+  - NPC Interactable
+  - PlayerSensor
+  - Platform
+  - 
+  - AttackPoint
+  - HitBox
+  - GrabPoint
+  - Ceiling
+  - Velocity
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0

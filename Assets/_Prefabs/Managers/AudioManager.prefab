@@ -1,0 +1,178 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &390336307489495434
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 390336307489495436}
+  - component: {fileID: 390336307489495437}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &390336307489495436
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 390336307489495434}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &390336307489495437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 390336307489495434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b17424465a3da4340a77fcfa44c7d50d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfxMixerGroup: {fileID: 24300002, guid: 38d231e9746dc50428774795f2966c95, type: 2}
+  musicMixerGroup: {fileID: 24300002, guid: 0d4222fc1023ff941ab668800d65beb5, type: 2}
+  voiceMixerGroup: {fileID: 24300002, guid: 99a37ba9ee863d2488b1853e26c34dec, type: 2}
+  sounds:
+  - m_name: BackgroundMusic_music
+    m_clips:
+    - {fileID: 8300000, guid: d44bfd4979b55b3419ed97a188501270, type: 3}
+    volume: 0.103
+    pitch: 0
+    m_randomVolumeRange: {x: 0, y: 0}
+    m_randomPitchRange: {x: 0, y: 0}
+    m_loop: 0
+  - m_name: Footstep1_sfx
+    m_clips:
+    - {fileID: 8300000, guid: f946db5304b07834a88735e44e46a374, type: 3}
+    volume: 0.769
+    pitch: 0
+    m_randomVolumeRange: {x: 0, y: 0}
+    m_randomPitchRange: {x: 0, y: 0}
+    m_loop: 0
+  - m_name: Jump_sfx
+    m_clips:
+    - {fileID: 8300000, guid: 5a18f2ef7db9f1943bedda13ff85ee89, type: 3}
+    volume: 1
+    pitch: 0
+    m_randomVolumeRange: {x: 0, y: 0}
+    m_randomPitchRange: {x: 0, y: 0}
+    m_loop: 0
+  - m_name: Landing_sfx
+    m_clips:
+    - {fileID: 8300000, guid: 3bad9373def0a154fae2025f92b9236f, type: 3}
+    volume: 1
+    pitch: 0
+    m_randomVolumeRange: {x: 0, y: 0}
+    m_randomPitchRange: {x: 0, y: 0}
+    m_loop: 0
+  - m_name: SpearMelee1_sfx
+    m_clips:
+    - {fileID: 8300000, guid: 2ddc38680e036e54a96609d8174bb40f, type: 3}
+    volume: 1
+    pitch: 0
+    m_randomVolumeRange: {x: 0, y: 0}
+    m_randomPitchRange: {x: 0, y: 0}
+    m_loop: 0
+  - m_name: SpearMelee2_sfx
+    m_clips:
+    - {fileID: 8300000, guid: b36aa39b2caa3b04a9bb6e3be9137b24, type: 3}
+    volume: 1
+    pitch: 0
+    m_randomVolumeRange: {x: 0, y: 0}
+    m_randomPitchRange: {x: 0, y: 0}
+    m_loop: 0
+  - m_name: ChargeSpearRelease_sfx
+    m_clips:
+    - {fileID: 8300000, guid: 197ef5015fb956c468dcf1a38047f5b8, type: 3}
+    volume: 1
+    pitch: 0
+    m_randomVolumeRange: {x: 0, y: 0}
+    m_randomPitchRange: {x: 0, y: 0}
+    m_loop: 0
+  - m_name: ChestOpen_sfx
+    m_clips:
+    - {fileID: 8300000, guid: cfa25bcd4323c4b448ec9a666c45b9e1, type: 3}
+    volume: 1
+    pitch: 0
+    m_randomVolumeRange: {x: 0, y: 0}
+    m_randomPitchRange: {x: 0, y: 0}
+    m_loop: 0
+  - m_name: HealthPickup_sfx
+    m_clips:
+    - {fileID: 8300000, guid: 5c710e5aec0bb6145acbd73674c4b9a7, type: 3}
+    volume: 1
+    pitch: 0
+    m_randomVolumeRange: {x: 0, y: 0}
+    m_randomPitchRange: {x: 0, y: 0}
+    m_loop: 0
+  - m_name: SpearThrow_sfx
+    m_clips:
+    - {fileID: 8300000, guid: 60d53596d8efce940af36f16f5c485f3, type: 3}
+    volume: 0.433
+    pitch: 0
+    m_randomVolumeRange: {x: 0, y: 0}
+    m_randomPitchRange: {x: 0, y: 0}
+    m_loop: 0
+  - m_name: SpearRetrievalEnd_sfx
+    m_clips:
+    - {fileID: 8300000, guid: b95d49d5c6c36884ba04c8d57c011b26, type: 3}
+    volume: 0.664
+    pitch: 0
+    m_randomVolumeRange: {x: 0, y: 0}
+    m_randomPitchRange: {x: 0, y: 0}
+    m_loop: 0
+  - m_name: SpearStuck_sfx
+    m_clips:
+    - {fileID: 8300000, guid: f145d7287756f614d82e0875464d008c, type: 3}
+    volume: 0.215
+    pitch: 0
+    m_randomVolumeRange: {x: 0, y: 0}
+    m_randomPitchRange: {x: 0, y: 0}
+    m_loop: 0
+  - m_name: WallSlide_sfx
+    m_clips:
+    - {fileID: 8300000, guid: 847920aa44ac5314c97c488ca47b11c0, type: 3}
+    volume: 0.837
+    pitch: 0
+    m_randomVolumeRange: {x: 0, y: 0}
+    m_randomPitchRange: {x: 0, y: 0}
+    m_loop: 0
+  - m_name: Hurt_sfx
+    m_clips:
+    - {fileID: 8300000, guid: d93b031c51bbde54aa840983a17815c1, type: 3}
+    volume: 0.837
+    pitch: 0
+    m_randomVolumeRange: {x: 0, y: 0}
+    m_randomPitchRange: {x: 0, y: 0}
+    m_loop: 0
+  - m_name: EnemyHurt_sfx
+    m_clips:
+    - {fileID: 8300000, guid: d93b031c51bbde54aa840983a17815c1, type: 3}
+    volume: 0.837
+    pitch: 0
+    m_randomVolumeRange: {x: 0, y: 0}
+    m_randomPitchRange: {x: 0, y: 0}
+    m_loop: 0
+  - m_name: EnemyDeath_sfx
+    m_clips:
+    - {fileID: 8300000, guid: 1bdea31ad00a4aa459d35cfdf423986a, type: 3}
+    volume: 0.837
+    pitch: 0
+    m_randomVolumeRange: {x: 0, y: 0}
+    m_randomPitchRange: {x: 0, y: 0}
+    m_loop: 0

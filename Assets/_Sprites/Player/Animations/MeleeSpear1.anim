@@ -1,0 +1,132 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!74 &7400000
+AnimationClip:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: MeleeSpear1
+  serializedVersion: 6
+  m_Legacy: 0
+  m_Compressed: 0
+  m_UseHighQualityCurve: 1
+  m_RotationCurves: []
+  m_CompressedRotationCurves: []
+  m_EulerCurves: []
+  m_PositionCurves: []
+  m_ScaleCurves: []
+  m_FloatCurves: []
+  m_PPtrCurves:
+  - curve:
+    - time: 0
+      value: {fileID: 21300000, guid: 4ab8bf700c002d541b33358140f598c8, type: 3}
+    - time: 0.016666668
+      value: {fileID: 21300000, guid: eb50dcf8f8b6ed34293e868072cf56ef, type: 3}
+    - time: 0.033333335
+      value: {fileID: 21300000, guid: aca0c75044bb9bb40a290dd0496c79a9, type: 3}
+    - time: 0.06666667
+      value: {fileID: 21300000, guid: 1585567794a889042a37ca9aa94ea6cd, type: 3}
+    - time: 0.083333336
+      value: {fileID: 21300000, guid: 6efa18d3e9a3f5946ae8748172d993a8, type: 3}
+    - time: 0.1
+      value: {fileID: 21300000, guid: d9a06cbc9dc652243b007a2c10f91279, type: 3}
+    - time: 0.11666667
+      value: {fileID: 21300000, guid: abd05a41f8604654aa519d2460d650ba, type: 3}
+    - time: 0.15
+      value: {fileID: 21300000, guid: 47ac3eb45fc9f494d9306ef2c9a4ba7f, type: 3}
+    - time: 0.16666667
+      value: {fileID: 21300000, guid: 5d847b2390b16174b90cac93577afba1, type: 3}
+    - time: 0.18333334
+      value: {fileID: 21300000, guid: efc03f89b2e3dd94ea5e990af68e9765, type: 3}
+    - time: 0.2
+      value: {fileID: 21300000, guid: 9bb80cb16c49a194499225b7d37f90d7, type: 3}
+    - time: 0.23333333
+      value: {fileID: 21300000, guid: d6cbcf047d578f847a1069fd89e43b03, type: 3}
+    - time: 0.25
+      value: {fileID: 21300000, guid: 6751069c0aba6774b95ecd2dbc0c0e12, type: 3}
+    attribute: m_Sprite
+    path: 
+    classID: 212
+    script: {fileID: 0}
+  m_SampleRate: 60
+  m_WrapMode: 0
+  m_Bounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+  m_ClipBindingConstant:
+    genericBindings:
+    - serializedVersion: 2
+      path: 0
+      attribute: 0
+      script: {fileID: 0}
+      typeID: 212
+      customType: 23
+      isPPtrCurve: 1
+    pptrCurveMapping:
+    - {fileID: 21300000, guid: 4ab8bf700c002d541b33358140f598c8, type: 3}
+    - {fileID: 21300000, guid: eb50dcf8f8b6ed34293e868072cf56ef, type: 3}
+    - {fileID: 21300000, guid: aca0c75044bb9bb40a290dd0496c79a9, type: 3}
+    - {fileID: 21300000, guid: 1585567794a889042a37ca9aa94ea6cd, type: 3}
+    - {fileID: 21300000, guid: 6efa18d3e9a3f5946ae8748172d993a8, type: 3}
+    - {fileID: 21300000, guid: d9a06cbc9dc652243b007a2c10f91279, type: 3}
+    - {fileID: 21300000, guid: abd05a41f8604654aa519d2460d650ba, type: 3}
+    - {fileID: 21300000, guid: 47ac3eb45fc9f494d9306ef2c9a4ba7f, type: 3}
+    - {fileID: 21300000, guid: 5d847b2390b16174b90cac93577afba1, type: 3}
+    - {fileID: 21300000, guid: efc03f89b2e3dd94ea5e990af68e9765, type: 3}
+    - {fileID: 21300000, guid: 9bb80cb16c49a194499225b7d37f90d7, type: 3}
+    - {fileID: 21300000, guid: d6cbcf047d578f847a1069fd89e43b03, type: 3}
+    - {fileID: 21300000, guid: 6751069c0aba6774b95ecd2dbc0c0e12, type: 3}
+  m_AnimationClipSettings:
+    serializedVersion: 2
+    m_AdditiveReferencePoseClip: {fileID: 0}
+    m_AdditiveReferencePoseTime: 0
+    m_StartTime: 0
+    m_StopTime: 0.26666668
+    m_OrientationOffsetY: 0
+    m_Level: 0
+    m_CycleOffset: 0
+    m_HasAdditiveReferencePose: 0
+    m_LoopTime: 1
+    m_LoopBlend: 0
+    m_LoopBlendOrientation: 0
+    m_LoopBlendPositionY: 0
+    m_LoopBlendPositionXZ: 0
+    m_KeepOriginalOrientation: 0
+    m_KeepOriginalPositionY: 1
+    m_KeepOriginalPositionXZ: 0
+    m_HeightFromFeet: 0
+    m_Mirror: 0
+  m_EditorCurves: []
+  m_EulerEditorCurves: []
+  m_HasGenericRootTransform: 0
+  m_HasMotionFloatCurves: 0
+  m_Events:
+  - time: 0
+    functionName: AE_Melee1Spear
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0
+    functionName: AE_StartAttack
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.11666667
+    functionName: AE_DamageEnemy
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.25
+    functionName: AE_EndAttack
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
