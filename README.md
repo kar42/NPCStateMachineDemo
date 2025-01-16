@@ -37,23 +37,6 @@ The `State` class represents the smallest unit in the framework, aligning to a s
 
 For example, certain goals may require agents to carry out the Move task, which utilizes an A* implementation to determine a path to a goal defined object, and then uses velocity in conjunction with triggered animations to move the characters across the screen or interact with a given goal position. This goal can be interrupted or replaced, causing the agent to stop moving or adjust their behavior. Most tasks are either standalone within their owning goal or calculate states to change animations based on a variety of environmental factors, such as their own ray-cast driven perception system or external factors outside the agent’s control, like gravity or player triggered effects.
 
-## TLDR
-In practice, the game AI flows in a nested or hierarchical manner:
-- GoalManager picks which Goal is “active” (selected by availability and priority).
-- That Goal picks which Task is “active” (based on calculated priority scores).
-- That Task picks which internal animation State is active (based on customised logic configured for each instance of a task).
-
-`GoalManager` keeps a linked list of Goal objects (myGoals) in order of increasing priority which is defined generically for characters in the game.
-
-Each frame, `GoalManager.ProcessGoals()` will:
-- Iterate from the end of the list to the front (highest to lowest priority).
-- Call `IsGoalAvailable()` on each provided instance of a `Goal`.
-- Pick the first one that’s “available” as `activeGoal`.
-- Call `ProcessTasks()` on the selected goal. 
-- Allow Tasks to continue their selection and sub-processing of states which result in triggering animations and abilities.
-
-This effectively ensures only one Goal, Task and State is active at any given time - whichever is of highest priority and determined to be available.
-
 ## Architecture Diagrams and Examples
 ```
 Class Overview Key Features
@@ -166,5 +149,25 @@ ChaseTarget Goal
 | ![neutralEnemy](https://github.com/kar42/NPCStateMachineDemo/blob/main/DemoSamples/neutralEnemy.gif "neutralEnemy") |
 
 
+
+## TLDR
+The game AI flows in a nested/hierarchical manner:
+- GoalManager picks which Goal is “active” (selected by availability and priority).
+- That Goal picks which Task is “active” (based on calculated priority scores).
+- That Task picks which internal animation State is active (based on customised logic configured for each instance of a task).
+
+`GoalManager` keeps a linked list of Goal objects (myGoals) in order of increasing priority which is defined generically for characters in the game based on their personality type.
+
+Each frame, `GoalManager.ProcessGoals()` will:
+- Iterate from the end of the goal list to the front (highest to lowest priority).
+- Call `IsGoalAvailable()` on each provided instance of a `Goal`.
+- Pick the first one that’s “available” as `activeGoal`.
+- Call `ProcessTasks()` on the selected goal.
+- Allow Tasks to continue their selection and sub-processing of necessary states which result in triggering animations and abilities.
+
+This effectively ensures only one Goal, Task and State is active at any given time - whichever is of highest priority and determined to be available.
+
+
 ## Keywords
 `State Machine`, `Goal Driven Autonomy`, `Target Selection`, `Perception System`, `Ability System`, `Combat System`, `Pathfinding`
+
