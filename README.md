@@ -1,6 +1,6 @@
 # NPC State Machine Demo
-| ![combat](https://github.com/kar42/NPCStateMachineDemo/blob/main/DemoSamples/combat.gif "combat") | ![mindfog](https://github.com/kar42/NPCStateMachineDemo/blob/main/DemoSamples/mindfog.gif "mindfog") | ![spearthrow](https://github.com/kar42/NPCStateMachineDemo/blob/main/DemoSamples/spearthrow.gif "spearthrow") |
-|---------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| ![spearthrow](https://github.com/kar42/NPCStateMachineDemo/blob/main/DemoSamples/spearthrow.gif "spearthrow") | ![combat](https://github.com/kar42/NPCStateMachineDemo/blob/main/DemoSamples/combat.gif "combat") |
+|---------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
 
 
 ## Overview
@@ -140,9 +140,21 @@ ChaseTarget Goal
     Block Task --> Idle Task : Idle State - if threat passes or block ability timer runs out
 ```
 
-## Results
+## Demo
+Mindfog Ability triggering combat in allied enemy units
+![mindfog](https://github.com/kar42/NPCStateMachineDemo/blob/main/DemoSamples/mindfog.gif "mindfog")
+
+
+Combat and ability system in simple enemy unit
 ![combat](https://github.com/kar42/NPCStateMachineDemo/blob/main/DemoSamples/combat.gif "combat")
 
+
+Same Combat and ability system in advanced enemy unit
+![combat](https://github.com/kar42/NPCStateMachineDemo/blob/main/DemoSamples/combat.gif "combat")
+
+
+Triggering enemy unit to switch personality from neutral to aggressive
+![neutralEnemy](https://github.com/kar42/NPCStateMachineDemo/blob/main/DemoSamples/neutralEnemy.gif "neutralEnemy")
 
 
 ## Keywords
