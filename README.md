@@ -141,23 +141,28 @@ ChaseTarget Goal
 ```
 
 ## Demo
-| Mindfog Ability triggering combat in allied enemy units |
-| :----------------------------------------: |
+|                      Unity Component for GoalManager showing dynamic goal, task and state change                       |
+|:----------------------------------------------------------------------------------------------------------------------:|
+| ![goalManagerUI](https://github.com/kar42/NPCStateMachineDemo/blob/main/DemoSamples/goalManagerUI.gif "goalManagerUI") |
+
+
+|                       Mindfog Ability triggering combat in allied enemy units                        |
+|:----------------------------------------------------------------------------------------------------:|
 | ![mindfog](https://github.com/kar42/NPCStateMachineDemo/blob/main/DemoSamples/mindfog.gif "mindfog") |
 
 
-| Combat and ability system in simple enemy unit |
-| :----------------------------------------: |
+|                          Combat and ability system in simple enemy unit                           |
+|:-------------------------------------------------------------------------------------------------:|
 | ![combat](https://github.com/kar42/NPCStateMachineDemo/blob/main/DemoSamples/combat.gif "combat") |
 
 
-| Same Combat and ability system in advanced enemy unit |
-| :----------------------------------------: |
+|                       Same Combat and ability system in advanced enemy unit                       |
+|:-------------------------------------------------------------------------------------------------:|
 | ![combat](https://github.com/kar42/NPCStateMachineDemo/blob/main/DemoSamples/combat.gif "combat") |
 
 
-| Triggering enemy unit to switch personality from neutral to aggressive |
-| :----------------------------------------: |
+|                       Triggering enemy unit to switch personality from neutral to aggressive                        |
+|:-------------------------------------------------------------------------------------------------------------------:|
 | ![neutralEnemy](https://github.com/kar42/NPCStateMachineDemo/blob/main/DemoSamples/neutralEnemy.gif "neutralEnemy") |
 
 
