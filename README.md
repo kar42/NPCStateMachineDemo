@@ -141,20 +141,20 @@ ChaseTarget Goal
 ```
 
 ## Demo
-Mindfog Ability triggering combat in allied enemy units
-![mindfog](https://github.com/kar42/NPCStateMachineDemo/blob/main/DemoSamples/mindfog.gif "mindfog")
+| Mindfog Ability triggering combat in allied enemy units |
+| ![mindfog](https://github.com/kar42/NPCStateMachineDemo/blob/main/DemoSamples/mindfog.gif "mindfog") |
 
 
-Combat and ability system in simple enemy unit
-![combat](https://github.com/kar42/NPCStateMachineDemo/blob/main/DemoSamples/combat.gif "combat")
+| Combat and ability system in simple enemy unit |
+| ![combat](https://github.com/kar42/NPCStateMachineDemo/blob/main/DemoSamples/combat.gif "combat") |
 
 
-Same Combat and ability system in advanced enemy unit
-![combat](https://github.com/kar42/NPCStateMachineDemo/blob/main/DemoSamples/combat.gif "combat")
+| Same Combat and ability system in advanced enemy unit |
+| ![combat](https://github.com/kar42/NPCStateMachineDemo/blob/main/DemoSamples/combat.gif "combat") |
 
 
-Triggering enemy unit to switch personality from neutral to aggressive
-![neutralEnemy](https://github.com/kar42/NPCStateMachineDemo/blob/main/DemoSamples/neutralEnemy.gif "neutralEnemy")
+| Triggering enemy unit to switch personality from neutral to aggressive |
+| ![neutralEnemy](https://github.com/kar42/NPCStateMachineDemo/blob/main/DemoSamples/neutralEnemy.gif "neutralEnemy") |
 
 
 ## Keywords
